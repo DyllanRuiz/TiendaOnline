@@ -1,5 +1,5 @@
 import express from 'express';
-
+import dotenv from 'dotenv';
 import database from './config/database.js';
 
 import {
@@ -15,15 +15,15 @@ import { Categoria, Producto } from './models/index.js';
 import corsOptions from './config/corsOptions.js';
 import cors from 'cors';
 
+
+dotenv.config();
 const app = express();
+
 
 // Middleware
 app.use(express.json());
 app.use(cors(corsOptions));
-
-
-
-
+app.use(express.urlencoded({ extended: true }));
 
 
 
