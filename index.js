@@ -10,10 +10,14 @@ import {
     ordenProductoRoutes,
 } from './routes/index.js';
 
+import corsOptions from './config/corsOptions.js';
+import cors from 'cors';
+
 const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(cors(corsOptions));
 
 // Verificar y crear tablas
 async function dbConnection() {
