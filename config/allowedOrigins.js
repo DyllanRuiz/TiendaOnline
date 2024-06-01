@@ -5,6 +5,7 @@
 const allowedOrigins = [
     "http://localhost:5173",
     "http://localhost:4000",
+    "https://tienda-online-front-exam-9j586zg6l-dyllan-ruizs-projects.vercel.app/"
 ];
 
 export default allowedOrigins;
