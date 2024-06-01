@@ -4,15 +4,15 @@
         "colId": "history",
         "containerId": "",
         "name": "http://localhost:3000/productos",
-        "url": "http://localhost:3000/api/ordenes",
+        "url": "http://localhost:3000/api/productos",
         "method": "GET",
         "sortNum": 0,
         "created": "2024-05-25T00:11:55.952Z",
-        "modified": "2024-05-25T15:31:49.966Z",
+        "modified": "2024-06-01T15:18:58.997Z",
         "headers": [],
         "body": {
             "type": "json",
-            "raw": "{\n        \"nombre\": \"Producto 1\",\n        \"precio\": 19.99,\n        \"stock\": 50,\n        \"descripcion\": \"Este es el primer producto.\",\n        \"imagen\": \"https://example.com/imagen1.jpg\",\n        \"categoriaId\": \"1\"\n}",
+            "raw": "{\n        \"nombre\": \"Producto updated\"\n\n}",
             "form": []
         }
     }
