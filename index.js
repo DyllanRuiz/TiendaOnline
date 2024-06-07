@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import database from "./config/database.js";
-import corsOptions from "./config/corsOptions.js";
+// import corsOptions from "./config/corsOptions.js";
 
 import {
   productoRoutes,
@@ -21,7 +21,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 
